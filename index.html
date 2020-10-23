@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Happy Dashain</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="container"><img src="dasai1.jpg" style="height: 100vh; width: 100%;">
+ 	<div class="sub-con">
+ 		<div class="head">CountDown</div>
+ 		<div class="clock">
+ 			<div class="day1">
+ 				<div id="day">00:</div>
+ 				<div class="day0" style="font-size: 16px; line-height: 15px;">Days</div>
+ 			</div>
+
+ 			<div class="hour1">
+ 				<div id="hour">00</div>
+ 				<div class="day00"style="font-size: 16px; line-height: 15px;">Hours</div>
+ 			</div>
+
+ 			<div class="min1">
+ 				<div id="minute">00</div>
+ 				<div class="day000"style="font-size: 16px; line-height: 15px;">Min</div>
+ 			</div>
+
+ 			<div class="sec1">
+ 				<div id="second">00</div>
+ 				<div class="day0000"style="font-size: 16px; line-height: 15px;">sec</div>
+ 			</div>
+ 		</div>
+
+
+ 	</div>
+ 	<div class="ganga">@gangakhadka0808@gmail.com</div>
+ </div>
+</body>
+<script>
+	var countdown=new Date("oct 26,2020 00:00:00").getTime();  //dashin date
+
+	function Dasai(){
+		var present=new Date().getTime();
+
+		var gap=countdown-present;
+
+		var second=1000;
+		var minute=second*60;
+		var hour=minute*60;
+		var day=hour*24;
+
+		var d=Math.floor(gap/day);
+		var h=Math.floor((gap%(day))/(hour));
+		var m=Math.floor((gap)%(hour)/(minute));
+		var s=Math.floor((gap)%(minute)/(second));
+
+		document.getElementById("day").innerHTML=d+":";
+		document.getElementById("hour").innerHTML=h+":";
+		document.getElementById("minute").innerHTML=m+":";
+		document.getElementById("second").innerHTML=s;
+
+	}
+	Dasai();
+	setInterval(function(){
+		Dasai();
+	},1000);
+</script>
+</html>

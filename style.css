@@ -1,0 +1,123 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+.container{
+	height: 100vh;
+	width: 100%;
+	background-color: blue;
+	/*display: flex;
+	flex-direction: column;*/
+	/*background-image: url(dasai.png);
+	background-size: cover;*/
+}
+.sub-con{
+	height: 140px;
+	width: 35%;
+	margin-left: 32.5%;
+	margin-top: 190px;
+	display: flex;
+	flex-direction: column;
+	top:-350px;
+	position: relative;
+
+}
+.head{
+	height:60px;
+	width: 100%;
+	background-color: #9acff959;
+	display: flex;
+	flex-direction: column;
+	font-size: 3.2em;
+	text-align: center;
+	font-family: 'Sansita Swashed', cursive;
+	line-height: 60px;
+	color:black;
+}
+.clock{
+	height: 80px;
+	width: 100%;
+	background-color: #31311f;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 3.5em;
+	text-align: center;
+	color: black;
+}
+.day1{
+	height: 80px;
+	width: 23%;
+	margin-left: 1%;
+	display: flex;
+	flex-direction: column;
+}
+#day{
+	height: 65px;
+	background-color: #c1b920;
+}
+.hour1{
+	height: 80px;
+	width: 24%;
+	margin-left: 1%;
+	display: flex;
+	flex-direction: column;
+}
+#hour{
+	height: 65px;
+	background-color: #c1b920;
+}
+.min1{
+	height: 80px;
+	width: 24%;
+	margin-left: 1%;
+	display: flex;
+	flex-direction: column;
+}
+#minute{
+	height: 65px;
+	background-color: #c1b920;
+}
+.sec1{
+	height: 80px;
+	width: 24%;
+	margin-left: 1%;
+	display: flex;
+	flex-direction: column;
+}
+#second{
+	height: 65px;
+	background-color: #c1b920;
+}
+.day0{
+	height: 15px;
+	width: 100%;
+	background-color:#0cf119;
+}
+.day00{
+	height: 15px;
+	width: 100%;
+	background-color:#0cf119;
+}
+.day000{
+	height: 15px;
+	width: 100%;
+	background-color:#0cf119;
+}
+.day0000{
+	height: 15px;
+	width: 100%;
+	background-color:#0cf119;
+}
+
+.ganga{
+	height: 30px;
+	width: 30%;
+	color: white;
+	position: relative;
+	top: -365px;
+	margin-left: 70%;
+	font-size: 1.5em;
+	font-family: 'Sansita Swashed', cursive;
+}
